@@ -124,6 +124,27 @@ class ViewController: UIViewController {
         case "%":
             print(operatorSymbol)
             previousLabel.text = calculator.percentage(digit1: Float(previous), digit2: Float(current))
+        case "10ⁿ":
+            print(operatorSymbol)
+            previousLabel.text = calculator.tenExponent(digit1: Float(current))
+        case "eⁿ":
+            print(operatorSymbol)
+            previousLabel.text = calculator.eulerExponent(digit1: Float(current))
+        case "Xⁿ":
+            print(operatorSymbol)
+            previousLabel.text = calculator.xExponent(digit1: Float(previous), digit2: Float(current))
+        case "X³":
+            print(operatorSymbol)
+            previousLabel.text = calculator.cubicExponent(digit1: Float(current))
+        case "X²":
+            print(operatorSymbol)
+            previousLabel.text = calculator.squareExponent(digit1: Float(current))
+        case "log₁₀":
+            print(operatorSymbol)
+            previousLabel.text = calculator.logBaseTen(digit1: Float(current))
+        case "ln":
+            print(operatorSymbol)
+            previousLabel.text = calculator.naturalLog(digit1: Float(current))
 
         default:
             print(sender.currentTitle!)
@@ -157,6 +178,28 @@ class ViewController: UIViewController {
         case "%":
             print(operatorSymbol)
             previousLabel.text = calculator.percentage(digit1: Float(previous), digit2: Float(current))
+            
+        case "10ⁿ":
+            print(operatorSymbol)
+            previousLabel.text = calculator.tenExponent(digit1: Float(current))
+        case "eⁿ":
+            print(operatorSymbol)
+            previousLabel.text = calculator.eulerExponent(digit1: Float(current))
+        case "Xⁿ":
+            print(operatorSymbol)
+            previousLabel.text = calculator.xExponent(digit1: Float(previous), digit2: Float(current))
+        case "X³":
+            print(operatorSymbol)
+            previousLabel.text = calculator.cubicExponent(digit1: Float(current))
+        case "X²":
+            print(operatorSymbol)
+            previousLabel.text = calculator.squareExponent(digit1: Float(current))
+        case "log₁₀":
+            print(operatorSymbol)
+            previousLabel.text = calculator.logBaseTen(digit1: Float(current))
+        case "ln":
+            print(operatorSymbol)
+            previousLabel.text = calculator.naturalLog(digit1: Float(current))
 
         default:
             print(sender.currentTitle!)
@@ -186,7 +229,6 @@ class ViewController: UIViewController {
             resultLabel.text!.removeFirst()
         }
     }
-    
 }
 
 //MARK: - extensions

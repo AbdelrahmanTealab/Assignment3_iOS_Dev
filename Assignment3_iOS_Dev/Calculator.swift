@@ -56,4 +56,72 @@ struct Calculator {
             return String(result)
         }
     }
+    
+    func tenExponent(digit1: Float?) -> String {
+        let result =  pow(10, digit1!)
+        if result.truncatingRemainder(dividingBy: 1) == 0{
+            return String(Int(result))
+        }
+        else{
+            return String(result)
+        }
+    }
+    
+    func eulerExponent(digit1: Float?) -> String {
+        let result =  pow(2.718281828459045, digit1!)
+        if result.truncatingRemainder(dividingBy: 1) == 0{
+            return String(Int(result))
+        }
+        else{
+            return String(result)
+        }
+    }
+    
+    func xExponent(digit1: Float?, digit2: Float?) -> String {
+        let result =  pow(digit1!, digit2!)
+        if result.truncatingRemainder(dividingBy: 1) == 0{
+            return String(Int(result))
+        }
+        else{
+            return String(result)
+        }
+    }
+    func cubicExponent(digit1: Float?) -> String {
+        let result =  pow(digit1!, 3)
+        if result.truncatingRemainder(dividingBy: 1) == 0{
+            return String(Int(result))
+        }
+        else{
+            return String(result)
+        }
+    }
+    func squareExponent(digit1: Float?) -> String {
+        let result =  pow(digit1!, 2)
+        if result.truncatingRemainder(dividingBy: 1) == 0{
+            return String(Int(result))
+        }
+        else{
+            return String(result)
+        }
+    }
+    
+    func logBaseTen(digit1: Float?) -> String {
+        let result =  log10(digit1!)
+        if result.truncatingRemainder(dividingBy: 1) == 0{
+            return String(Int(result))
+        }
+        else{
+            return String(result)
+        }
+    }
+    
+    func naturalLog(digit1: Float?) -> String {
+        let result =  log(digit1!)
+        if result.truncatingRemainder(dividingBy: 1) == 0{
+            return String(Int(result))
+        }
+        else{
+            return String(result)
+        }
+    }
 }

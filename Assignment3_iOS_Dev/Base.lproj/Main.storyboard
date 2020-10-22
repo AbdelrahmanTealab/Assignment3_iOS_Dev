@@ -22,19 +22,19 @@
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="right" semanticContentAttribute="forceRightToLeft" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="f1d-Qf-Jkn">
                                         <rect key="frame" x="10" y="19" width="708" height="20.5"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
                                         <color key="textColor" name="calculator text"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="right" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="eCK-XA-oNQ">
                                         <rect key="frame" x="0.0" y="39.5" width="886" height="39"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="70"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="50"/>
                                         <color key="textColor" name="calculator text"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" +" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNL-td-aRr">
                                         <rect key="frame" x="716" y="19" width="170" height="20.5"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
                                         <color key="textColor" name="calculator text"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -613,7 +613,7 @@
                                         <color key="backgroundColor" name="calculator button landscape"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                         <size key="titleShadowOffset" width="1" height="1"/>
-                                        <state key="normal" title="AC">
+                                        <state key="normal" title="2nd">
                                             <color key="titleColor" name="calculator text"/>
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -626,12 +626,13 @@
                                         <color key="backgroundColor" name="calculator button landscape"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                         <size key="titleShadowOffset" width="1" height="1"/>
-                                        <state key="normal" title="AC">
+                                        <state key="normal" title="X²">
                                             <color key="titleColor" name="calculator text"/>
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="CEN-s5-73B"/>
+                                            <action selector="operatorPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="HLT-xE-0Ta"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMu-ac-1Mt">
@@ -639,12 +640,13 @@
                                         <color key="backgroundColor" name="calculator button landscape"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                         <size key="titleShadowOffset" width="1" height="1"/>
-                                        <state key="normal" title="AC">
+                                        <state key="normal" title="X³">
                                             <color key="titleColor" name="calculator text"/>
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="6DP-ON-G9i"/>
+                                            <action selector="operatorPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="zc9-Zy-KU0"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qb4-PJ-NTM">
@@ -652,12 +654,13 @@
                                         <color key="backgroundColor" name="calculator button landscape"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                         <size key="titleShadowOffset" width="1" height="1"/>
-                                        <state key="normal" title="AC">
+                                        <state key="normal" title="Xⁿ">
                                             <color key="titleColor" name="calculator text"/>
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="cVc-uW-l4g"/>
+                                            <action selector="operatorPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="JIc-n3-YQN"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRc-Ep-88e">
@@ -665,12 +668,13 @@
                                         <color key="backgroundColor" name="calculator button landscape"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                         <size key="titleShadowOffset" width="1" height="1"/>
-                                        <state key="normal" title="AC">
+                                        <state key="normal" title="eⁿ">
                                             <color key="titleColor" name="calculator text"/>
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="q38-5x-Uux"/>
+                                            <action selector="operatorPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="IuB-Kj-wso"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLa-cg-Msc">
@@ -678,12 +682,13 @@
                                         <color key="backgroundColor" name="calculator button landscape"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                         <size key="titleShadowOffset" width="1" height="1"/>
-                                        <state key="normal" title="AC">
+                                        <state key="normal" title="10ⁿ">
                                             <color key="titleColor" name="calculator text"/>
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="sfC-2S-x2F"/>
+                                            <action selector="operatorPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="RHh-cf-6t4"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXt-wp-u7B">
@@ -747,7 +752,7 @@
                                         <color key="backgroundColor" name="calculator button landscape"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                         <size key="titleShadowOffset" width="1" height="1"/>
-                                        <state key="normal" title="AC">
+                                        <state key="normal" title="¹∕ᵪ">
                                             <color key="titleColor" name="calculator text"/>
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -760,7 +765,7 @@
                                         <color key="backgroundColor" name="calculator button landscape"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                         <size key="titleShadowOffset" width="1" height="1"/>
-                                        <state key="normal" title="AC">
+                                        <state key="normal" title="²√ᵪ">
                                             <color key="titleColor" name="calculator text"/>
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -773,7 +778,7 @@
                                         <color key="backgroundColor" name="calculator button landscape"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                         <size key="titleShadowOffset" width="1" height="1"/>
-                                        <state key="normal" title="AC">
+                                        <state key="normal" title="³√ᵪ">
                                             <color key="titleColor" name="calculator text"/>
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -786,7 +791,7 @@
                                         <color key="backgroundColor" name="calculator button landscape"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                         <size key="titleShadowOffset" width="1" height="1"/>
-                                        <state key="normal" title="AC">
+                                        <state key="normal" title="ⁿ√ᵪ">
                                             <color key="titleColor" name="calculator text"/>
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -799,12 +804,13 @@
                                         <color key="backgroundColor" name="calculator button landscape"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                         <size key="titleShadowOffset" width="1" height="1"/>
-                                        <state key="normal" title="AC">
+                                        <state key="normal" title="ln">
                                             <color key="titleColor" name="calculator text"/>
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="yhc-h0-Lfd"/>
+                                            <action selector="operatorPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="PW0-7u-xVW"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wq5-Va-wQN">
@@ -812,12 +818,13 @@
                                         <color key="backgroundColor" name="calculator button landscape"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                         <size key="titleShadowOffset" width="1" height="1"/>
-                                        <state key="normal" title="AC">
+                                        <state key="normal" title="log₁₀">
                                             <color key="titleColor" name="calculator text"/>
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="JQ9-XZ-SDr"/>
+                                            <action selector="operatorPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="3qH-Oa-77Q"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CsT-Kt-bBg">
@@ -881,7 +888,7 @@
                                         <color key="backgroundColor" name="calculator button landscape"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                         <size key="titleShadowOffset" width="1" height="1"/>
-                                        <state key="normal" title="AC">
+                                        <state key="normal" title="x!">
                                             <color key="titleColor" name="calculator text"/>
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -894,7 +901,7 @@
                                         <color key="backgroundColor" name="calculator button landscape"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                         <size key="titleShadowOffset" width="1" height="1"/>
-                                        <state key="normal" title="AC">
+                                        <state key="normal" title="sin">
                                             <color key="titleColor" name="calculator text"/>
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -907,7 +914,7 @@
                                         <color key="backgroundColor" name="calculator button landscape"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                         <size key="titleShadowOffset" width="1" height="1"/>
-                                        <state key="normal" title="AC">
+                                        <state key="normal" title="cos">
                                             <color key="titleColor" name="calculator text"/>
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -920,7 +927,7 @@
                                         <color key="backgroundColor" name="calculator button landscape"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                         <size key="titleShadowOffset" width="1" height="1"/>
-                                        <state key="normal" title="AC">
+                                        <state key="normal" title="tan">
                                             <color key="titleColor" name="calculator text"/>
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -933,7 +940,7 @@
                                         <color key="backgroundColor" name="calculator button landscape"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                         <size key="titleShadowOffset" width="1" height="1"/>
-                                        <state key="normal" title="AC">
+                                        <state key="normal" title="e">
                                             <color key="titleColor" name="calculator text"/>
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -946,7 +953,7 @@
                                         <color key="backgroundColor" name="calculator button landscape"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                         <size key="titleShadowOffset" width="1" height="1"/>
-                                        <state key="normal" title="AC">
+                                        <state key="normal" title="EE">
                                             <color key="titleColor" name="calculator text"/>
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -1015,7 +1022,7 @@
                                         <color key="backgroundColor" name="calculator button landscape"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                         <size key="titleShadowOffset" width="1" height="1"/>
-                                        <state key="normal" title="AC">
+                                        <state key="normal" title="Rad">
                                             <color key="titleColor" name="calculator text"/>
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -1028,7 +1035,7 @@
                                         <color key="backgroundColor" name="calculator button landscape"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                         <size key="titleShadowOffset" width="1" height="1"/>
-                                        <state key="normal" title="AC">
+                                        <state key="normal" title="sinh">
                                             <color key="titleColor" name="calculator text"/>
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -1041,7 +1048,7 @@
                                         <color key="backgroundColor" name="calculator button landscape"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                         <size key="titleShadowOffset" width="1" height="1"/>
-                                        <state key="normal" title="AC">
+                                        <state key="normal" title="cosh">
                                             <color key="titleColor" name="calculator text"/>
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -1054,7 +1061,7 @@
                                         <color key="backgroundColor" name="calculator button landscape"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                         <size key="titleShadowOffset" width="1" height="1"/>
-                                        <state key="normal" title="AC">
+                                        <state key="normal" title="tanh">
                                             <color key="titleColor" name="calculator text"/>
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -1067,7 +1074,7 @@
                                         <color key="backgroundColor" name="calculator button landscape"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                         <size key="titleShadowOffset" width="1" height="1"/>
-                                        <state key="normal" title="AC">
+                                        <state key="normal" title="𝛑">
                                             <color key="titleColor" name="calculator text"/>
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -1080,7 +1087,7 @@
                                         <color key="backgroundColor" name="calculator button landscape"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                         <size key="titleShadowOffset" width="1" height="1"/>
-                                        <state key="normal" title="AC">
+                                        <state key="normal" title="Rand">
                                             <color key="titleColor" name="calculator text"/>
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
