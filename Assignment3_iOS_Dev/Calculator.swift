@@ -124,4 +124,41 @@ struct Calculator {
             return String(result)
         }
     }
+    func nRootX(digit1: Float?, digit2: Float?) -> String {
+        let result =  pow(digit1!, (1/digit2!))
+        if result.truncatingRemainder(dividingBy: 1) == 0{
+            return String(Int(result))
+        }
+        else{
+            return String(result)
+        }
+    }
+    func cubicRoot(digit1: Float?) -> String {
+        let result =  pow(digit1!, (1/3))
+        if result.truncatingRemainder(dividingBy: 1) == 0{
+            return String(Int(result))
+        }
+        else{
+            return String(result)
+        }
+    }
+    func squareRoot(digit1: Float?) -> String {
+        let result =  sqrt(digit1!)
+        if result.truncatingRemainder(dividingBy: 1) == 0{
+            return String(Int(result))
+        }
+        else{
+            return String(result)
+        }
+    }
+    func inverse(digit1: Float?) -> String {
+        let result =  1/digit1!
+        if result.truncatingRemainder(dividingBy: 1) == 0{
+            return String(Int(result))
+        }
+        else{
+            return String(result)
+        }
+    }
+
 }

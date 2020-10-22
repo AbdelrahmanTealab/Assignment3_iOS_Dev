@@ -87,7 +87,7 @@ class ViewController: UIViewController {
         let previous = previousLabel.text!
         let current = resultLabel.text!
         
-        let operatorSymbol = operatorLabel.text ?? "+"
+        let operatorSymbol = operatorLabel.text!
         
         //checking whether the number ends with a dot or not in order to keep the string clean
         if resultLabel.text!.hasSuffix(".") {
@@ -145,7 +145,19 @@ class ViewController: UIViewController {
         case "ln":
             print(operatorSymbol)
             previousLabel.text = calculator.naturalLog(digit1: Float(current))
-
+        case "ⁿ√ᵪ":
+            print(operatorSymbol)
+            previousLabel.text = calculator.nRootX(digit1: Float(previous), digit2: Float(current))
+        case "³√ᵪ":
+            print(operatorSymbol)
+            previousLabel.text = calculator.cubicRoot(digit1: Float(current))
+        case "²√ᵪ":
+            print(operatorSymbol)
+            previousLabel.text = calculator.squareRoot(digit1: Float(current))
+        case "¹∕ᵪ":
+            print(operatorSymbol)
+            previousLabel.text = calculator.inverse(digit1: Float(current))
+        
         default:
             print(sender.currentTitle!)
         }
@@ -200,7 +212,18 @@ class ViewController: UIViewController {
         case "ln":
             print(operatorSymbol)
             previousLabel.text = calculator.naturalLog(digit1: Float(current))
-
+        case "ⁿ√ᵪ":
+            print(operatorSymbol)
+            previousLabel.text = calculator.nRootX(digit1: Float(previous), digit2: Float(current))
+        case "³√ᵪ":
+            print(operatorSymbol)
+            previousLabel.text = calculator.cubicRoot(digit1: Float(current))
+        case "²√ᵪ":
+            print(operatorSymbol)
+            previousLabel.text = calculator.squareRoot(digit1: Float(current))
+        case "¹∕ᵪ":
+            print(operatorSymbol)
+            previousLabel.text = calculator.inverse(digit1: Float(current))
         default:
             print(sender.currentTitle!)
         }

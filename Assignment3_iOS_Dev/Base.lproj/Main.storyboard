@@ -758,6 +758,7 @@
                                         </state>
                                         <connections>
                                             <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="vzw-ND-t79"/>
+                                            <action selector="operatorPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="dki-hK-dMc"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJn-Gf-UsZ">
@@ -771,6 +772,7 @@
                                         </state>
                                         <connections>
                                             <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="0A0-Ba-feH"/>
+                                            <action selector="operatorPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="enu-aO-cU8"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="728-El-e3F">
@@ -784,6 +786,7 @@
                                         </state>
                                         <connections>
                                             <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="Ihp-Nu-ptV"/>
+                                            <action selector="operatorPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="4zy-dQ-dtA"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6oh-7X-4ci">
@@ -797,6 +800,7 @@
                                         </state>
                                         <connections>
                                             <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="WrD-eo-Vf5"/>
+                                            <action selector="operatorPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="Lmi-ao-Hco"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQW-uw-vbq">
