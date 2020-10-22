@@ -1,24 +1,1420 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aL9-0c-rHn">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="WYa-qp-MQf">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="aL9-0c-rHn" customClass="ViewController" customModule="Assignment3_iOS_Dev" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vrc-mP-wLM">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oqG-fG-KU0" userLabel="display view">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="78.5"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="right" semanticContentAttribute="forceRightToLeft" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="f1d-Qf-Jkn">
+                                        <rect key="frame" x="10" y="19" width="708" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                        <color key="textColor" name="calculator text"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="right" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="eCK-XA-oNQ">
+                                        <rect key="frame" x="0.0" y="39.5" width="886" height="39"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="70"/>
+                                        <color key="textColor" name="calculator text"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" +" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNL-td-aRr">
+                                        <rect key="frame" x="716" y="19" width="170" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                        <color key="textColor" name="calculator text"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="f1d-Qf-Jkn" firstAttribute="height" secondItem="oqG-fG-KU0" secondAttribute="height" multiplier="0.250765" constant="0.5" id="0QR-LR-41b"/>
+                                    <constraint firstAttribute="trailing" secondItem="CNL-td-aRr" secondAttribute="trailing" constant="10" id="7TM-yj-7rJ"/>
+                                    <constraint firstItem="f1d-Qf-Jkn" firstAttribute="width" secondItem="oqG-fG-KU0" secondAttribute="width" multiplier="0.79" id="Fu4-0t-W02"/>
+                                    <constraint firstItem="eCK-XA-oNQ" firstAttribute="top" secondItem="CNL-td-aRr" secondAttribute="bottom" id="Ghd-rS-1pb"/>
+                                    <constraint firstItem="CNL-td-aRr" firstAttribute="height" secondItem="oqG-fG-KU0" secondAttribute="height" multiplier="0.250765" constant="0.5" id="I3G-m4-9SY"/>
+                                    <constraint firstAttribute="trailing" secondItem="eCK-XA-oNQ" secondAttribute="trailing" constant="10" id="RLp-DY-7RK"/>
+                                    <constraint firstItem="eCK-XA-oNQ" firstAttribute="leading" secondItem="oqG-fG-KU0" secondAttribute="leading" id="YfJ-X0-TaY"/>
+                                    <constraint firstItem="eCK-XA-oNQ" firstAttribute="height" secondItem="oqG-fG-KU0" secondAttribute="height" multiplier="0.5" id="idp-hJ-WJ1"/>
+                                    <constraint firstItem="f1d-Qf-Jkn" firstAttribute="leading" secondItem="oqG-fG-KU0" secondAttribute="leading" constant="10" id="mpM-Bs-cgx"/>
+                                    <constraint firstAttribute="bottom" secondItem="eCK-XA-oNQ" secondAttribute="bottom" id="oUk-fs-nHm"/>
+                                    <constraint firstItem="eCK-XA-oNQ" firstAttribute="top" secondItem="f1d-Qf-Jkn" secondAttribute="bottom" id="qXn-jC-irQ"/>
+                                    <constraint firstItem="CNL-td-aRr" firstAttribute="width" secondItem="oqG-fG-KU0" secondAttribute="width" multiplier="0.19" id="whs-Wt-TOP"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NG6-gl-vk2" userLabel="Buttons View">
+                                <rect key="frame" x="0.0" y="163" width="414" height="728"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwk-lJ-3R2">
+                                        <rect key="frame" x="1" y="0.0" width="101.5" height="145.5"/>
+                                        <color key="backgroundColor" name="calculator button extra"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="40"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="AC">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="acPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="6ua-Yl-bTm"/>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="HGP-ov-74l"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihi-zW-k0a">
+                                        <rect key="frame" x="103.5" y="0.0" width="102.5" height="145.5"/>
+                                        <color key="backgroundColor" name="calculator button extra"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="±">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="IJT-sk-ImH"/>
+                                            <action selector="signPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="q4D-nz-NfN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yth-P1-Beq">
+                                        <rect key="frame" x="208" y="0.0" width="102.5" height="145.5"/>
+                                        <color key="backgroundColor" name="calculator button operators"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="40"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="%">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="l4t-1v-amD"/>
+                                            <action selector="operatorPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="mzX-JD-cQE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDB-9h-BII">
+                                        <rect key="frame" x="311.5" y="0.0" width="101.5" height="145.5"/>
+                                        <color key="backgroundColor" name="calculator button operators"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="40"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="÷">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="HqX-bO-wqC"/>
+                                            <action selector="operatorPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="6Ms-NL-uLG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mo7-ue-DhM">
+                                        <rect key="frame" x="1" y="146.5" width="101.5" height="145.5"/>
+                                        <color key="backgroundColor" name="calculator button"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="7">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="D0g-Nq-63C"/>
+                                            <action selector="digitPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="Q9P-lZ-2I8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMN-Lr-8ru">
+                                        <rect key="frame" x="103.5" y="146.5" width="102.5" height="145.5"/>
+                                        <color key="backgroundColor" name="calculator button"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="8">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="G3B-Dz-3Ul"/>
+                                            <action selector="digitPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="3fZ-yJ-lYu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3u1-zf-Ffi">
+                                        <rect key="frame" x="208" y="146.5" width="102.5" height="145.5"/>
+                                        <color key="backgroundColor" name="calculator button"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="9">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="5fT-3M-Ezu"/>
+                                            <action selector="digitPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="ZJE-Qy-CSb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kRA-9x-9Nl">
+                                        <rect key="frame" x="311.5" y="146.5" width="101.5" height="145.5"/>
+                                        <color key="backgroundColor" name="calculator button operators"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="40"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="×">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="IHk-XJ-ZvJ"/>
+                                            <action selector="operatorPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="1HZ-sc-4Bh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ArK-6f-Tmw">
+                                        <rect key="frame" x="1" y="293" width="101.5" height="146"/>
+                                        <color key="backgroundColor" name="calculator button"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="4">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="qZU-iG-B9z"/>
+                                            <action selector="digitPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="jox-AQ-aKe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFR-hf-5TY">
+                                        <rect key="frame" x="103.5" y="293" width="102.5" height="146"/>
+                                        <color key="backgroundColor" name="calculator button"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="5">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="UyW-hG-SjH"/>
+                                            <action selector="digitPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="ooO-Ou-oH0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyx-VH-1gk">
+                                        <rect key="frame" x="208" y="293" width="102.5" height="146"/>
+                                        <color key="backgroundColor" name="calculator button"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="6">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="ASo-4g-9AI"/>
+                                            <action selector="digitPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="x3b-7u-FD0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZnV-de-Omk">
+                                        <rect key="frame" x="311.5" y="293" width="101.5" height="146"/>
+                                        <color key="backgroundColor" name="calculator button operators"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="40"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="-">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="iHG-2h-FSK"/>
+                                            <action selector="operatorPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="aEW-OH-ap0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQR-aC-eh0">
+                                        <rect key="frame" x="1" y="440" width="101.5" height="145.5"/>
+                                        <color key="backgroundColor" name="calculator button"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="1">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="kBo-pY-MQ6"/>
+                                            <action selector="digitPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="gBg-DN-6Td"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3v-Ia-l86">
+                                        <rect key="frame" x="103.5" y="440" width="102.5" height="145.5"/>
+                                        <color key="backgroundColor" name="calculator button"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="2">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="Cjb-FV-yrx"/>
+                                            <action selector="digitPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="NPc-cf-SnN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="roG-LD-70u">
+                                        <rect key="frame" x="208" y="440" width="102.5" height="145.5"/>
+                                        <color key="backgroundColor" name="calculator button"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="3">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="dWG-AO-hez"/>
+                                            <action selector="digitPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="CNF-vj-g4q"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocS-9r-gQA">
+                                        <rect key="frame" x="311.5" y="440" width="101.5" height="145.5"/>
+                                        <color key="backgroundColor" name="calculator button operators"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="40"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="+">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="ko1-fi-ybD"/>
+                                            <action selector="operatorPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="DgH-KT-lIU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RrI-jU-FoU">
+                                        <rect key="frame" x="1" y="586.5" width="101.5" height="140.5"/>
+                                        <color key="backgroundColor" name="calculator button extra"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="40"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="⌫">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="6tK-hy-yzh"/>
+                                            <action selector="clearPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="7rb-Vw-8Me"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FUA-pR-ROx">
+                                        <rect key="frame" x="103.5" y="586.5" width="102.5" height="140.5"/>
+                                        <color key="backgroundColor" name="calculator button"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="0">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="OYR-wp-JIx"/>
+                                            <action selector="digitPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="U9x-3X-Vns"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LYm-iR-MPm">
+                                        <rect key="frame" x="208" y="586.5" width="102.5" height="140.5"/>
+                                        <color key="backgroundColor" name="calculator button extra"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title=".">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="X0I-1h-hZ8"/>
+                                            <action selector="decimalPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="TAa-Lp-1Q5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OrO-iH-qAS">
+                                        <rect key="frame" x="311.5" y="586.5" width="101.5" height="140.5"/>
+                                        <color key="backgroundColor" name="calculator button operators"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="40"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="=">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="aAg-lQ-C7s"/>
+                                            <action selector="equalPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="3KW-ZL-UXR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Mo7-ue-DhM" firstAttribute="top" secondItem="iwk-lJ-3R2" secondAttribute="bottom" constant="1" id="1Hv-BG-VTl"/>
+                                    <constraint firstItem="ocS-9r-gQA" firstAttribute="leading" secondItem="roG-LD-70u" secondAttribute="trailing" constant="1" id="1cY-vW-u37"/>
+                                    <constraint firstItem="iwk-lJ-3R2" firstAttribute="top" secondItem="NG6-gl-vk2" secondAttribute="top" id="2Bh-no-60U"/>
+                                    <constraint firstItem="zQR-aC-eh0" firstAttribute="top" secondItem="ArK-6f-Tmw" secondAttribute="bottom" constant="1" id="2qY-xO-w8Z"/>
+                                    <constraint firstAttribute="bottom" secondItem="RrI-jU-FoU" secondAttribute="bottom" constant="1" id="3fm-PB-iGf"/>
+                                    <constraint firstItem="ArK-6f-Tmw" firstAttribute="width" secondItem="NG6-gl-vk2" secondAttribute="width" multiplier="0.245" id="3g8-bC-eR5"/>
+                                    <constraint firstItem="FUA-pR-ROx" firstAttribute="width" secondItem="NG6-gl-vk2" secondAttribute="width" multiplier="0.2475" id="4cp-57-Gtn"/>
+                                    <constraint firstItem="FUA-pR-ROx" firstAttribute="leading" secondItem="RrI-jU-FoU" secondAttribute="trailing" constant="1" id="6Rp-p7-064"/>
+                                    <constraint firstItem="yth-P1-Beq" firstAttribute="top" secondItem="NG6-gl-vk2" secondAttribute="top" id="76l-n0-A1Q"/>
+                                    <constraint firstItem="zQR-aC-eh0" firstAttribute="height" secondItem="NG6-gl-vk2" secondAttribute="height" multiplier="0.2" id="94Y-wh-9wn"/>
+                                    <constraint firstItem="zQR-aC-eh0" firstAttribute="width" secondItem="NG6-gl-vk2" secondAttribute="width" multiplier="0.245" id="9py-v4-uFr"/>
+                                    <constraint firstItem="3u1-zf-Ffi" firstAttribute="height" secondItem="NG6-gl-vk2" secondAttribute="height" multiplier="0.2" id="9qI-nV-Ger"/>
+                                    <constraint firstItem="yth-P1-Beq" firstAttribute="height" secondItem="NG6-gl-vk2" secondAttribute="height" multiplier="0.2" id="B5e-Ce-raL"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZnV-de-Omk" secondAttribute="trailing" constant="1" id="B89-Fp-ZNb"/>
+                                    <constraint firstItem="gyx-VH-1gk" firstAttribute="height" secondItem="NG6-gl-vk2" secondAttribute="height" multiplier="0.2" id="CaX-tL-i2L"/>
+                                    <constraint firstItem="LYm-iR-MPm" firstAttribute="width" secondItem="NG6-gl-vk2" secondAttribute="width" multiplier="0.2475" id="D5n-K5-0rh"/>
+                                    <constraint firstItem="rFR-hf-5TY" firstAttribute="width" secondItem="NG6-gl-vk2" secondAttribute="width" multiplier="0.2475" id="DGo-g8-pN4"/>
+                                    <constraint firstItem="ihi-zW-k0a" firstAttribute="top" secondItem="NG6-gl-vk2" secondAttribute="top" id="DHQ-In-YaR"/>
+                                    <constraint firstItem="ocS-9r-gQA" firstAttribute="width" secondItem="NG6-gl-vk2" secondAttribute="width" multiplier="0.245" id="DSv-aY-bU0"/>
+                                    <constraint firstItem="ihi-zW-k0a" firstAttribute="height" secondItem="NG6-gl-vk2" secondAttribute="height" multiplier="0.2" id="EJd-VF-bfM"/>
+                                    <constraint firstItem="RrI-jU-FoU" firstAttribute="leading" secondItem="NG6-gl-vk2" secondAttribute="leading" constant="1" id="Eba-aj-vYt"/>
+                                    <constraint firstItem="RrI-jU-FoU" firstAttribute="width" secondItem="NG6-gl-vk2" secondAttribute="width" multiplier="0.245" id="Fr2-hJ-riY"/>
+                                    <constraint firstAttribute="bottom" secondItem="FUA-pR-ROx" secondAttribute="bottom" constant="1" id="GL1-UC-gUQ"/>
+                                    <constraint firstItem="rMN-Lr-8ru" firstAttribute="height" secondItem="NG6-gl-vk2" secondAttribute="height" multiplier="0.2" id="HIR-b6-a67"/>
+                                    <constraint firstAttribute="trailing" secondItem="OrO-iH-qAS" secondAttribute="trailing" constant="1" id="HcH-Yw-zdQ"/>
+                                    <constraint firstItem="iwk-lJ-3R2" firstAttribute="leading" secondItem="NG6-gl-vk2" secondAttribute="leading" constant="1" id="I1y-W5-AiA"/>
+                                    <constraint firstAttribute="trailing" secondItem="ocS-9r-gQA" secondAttribute="trailing" constant="1" id="JFB-gd-Ej5"/>
+                                    <constraint firstAttribute="bottom" secondItem="LYm-iR-MPm" secondAttribute="bottom" constant="1" id="Kf7-IG-cVr"/>
+                                    <constraint firstItem="ArK-6f-Tmw" firstAttribute="height" secondItem="NG6-gl-vk2" secondAttribute="height" multiplier="0.2" id="MLz-sr-BZt"/>
+                                    <constraint firstItem="iwk-lJ-3R2" firstAttribute="height" secondItem="NG6-gl-vk2" secondAttribute="height" multiplier="0.2" id="NpM-aN-kmh"/>
+                                    <constraint firstItem="ocS-9r-gQA" firstAttribute="height" secondItem="NG6-gl-vk2" secondAttribute="height" multiplier="0.2" id="Och-WY-Grr"/>
+                                    <constraint firstItem="sDB-9h-BII" firstAttribute="height" secondItem="NG6-gl-vk2" secondAttribute="height" multiplier="0.2" id="OzJ-Ex-i9I"/>
+                                    <constraint firstItem="g3v-Ia-l86" firstAttribute="top" secondItem="ArK-6f-Tmw" secondAttribute="bottom" constant="1" id="PVJ-pn-zdo"/>
+                                    <constraint firstItem="ArK-6f-Tmw" firstAttribute="top" secondItem="Mo7-ue-DhM" secondAttribute="bottom" constant="1" id="Pju-8F-qav"/>
+                                    <constraint firstItem="Mo7-ue-DhM" firstAttribute="height" secondItem="NG6-gl-vk2" secondAttribute="height" multiplier="0.2" id="QVN-pr-XaP"/>
+                                    <constraint firstItem="sDB-9h-BII" firstAttribute="top" secondItem="NG6-gl-vk2" secondAttribute="top" id="QuW-cr-Kxs"/>
+                                    <constraint firstItem="ZnV-de-Omk" firstAttribute="height" secondItem="NG6-gl-vk2" secondAttribute="height" multiplier="0.2" id="SJE-mP-k2X"/>
+                                    <constraint firstItem="ArK-6f-Tmw" firstAttribute="leading" secondItem="NG6-gl-vk2" secondAttribute="leading" constant="1" id="Vgo-1w-ZtK"/>
+                                    <constraint firstItem="LYm-iR-MPm" firstAttribute="top" secondItem="roG-LD-70u" secondAttribute="bottom" constant="1" id="VuR-ga-l0N"/>
+                                    <constraint firstItem="yth-P1-Beq" firstAttribute="width" secondItem="NG6-gl-vk2" secondAttribute="width" multiplier="0.2475" id="WHi-p6-p7r"/>
+                                    <constraint firstItem="iwk-lJ-3R2" firstAttribute="width" secondItem="NG6-gl-vk2" secondAttribute="width" multiplier="0.245" id="WhR-L3-vON"/>
+                                    <constraint firstItem="roG-LD-70u" firstAttribute="top" secondItem="gyx-VH-1gk" secondAttribute="bottom" constant="1" id="XGk-gE-Mf8"/>
+                                    <constraint firstItem="ihi-zW-k0a" firstAttribute="width" secondItem="NG6-gl-vk2" secondAttribute="width" multiplier="0.2475" id="XRR-Po-2UE"/>
+                                    <constraint firstItem="ihi-zW-k0a" firstAttribute="leading" secondItem="iwk-lJ-3R2" secondAttribute="trailing" constant="1" id="XgM-3a-Q9z"/>
+                                    <constraint firstItem="sDB-9h-BII" firstAttribute="width" secondItem="NG6-gl-vk2" secondAttribute="width" multiplier="0.245" id="ZR6-eM-7jk"/>
+                                    <constraint firstItem="rFR-hf-5TY" firstAttribute="height" secondItem="NG6-gl-vk2" secondAttribute="height" multiplier="0.2" id="Zhb-tH-ttL"/>
+                                    <constraint firstItem="rFR-hf-5TY" firstAttribute="leading" secondItem="ArK-6f-Tmw" secondAttribute="trailing" constant="1" id="Zog-vF-Hf6"/>
+                                    <constraint firstItem="ZnV-de-Omk" firstAttribute="top" secondItem="kRA-9x-9Nl" secondAttribute="bottom" constant="1" id="a2r-lY-Sde"/>
+                                    <constraint firstAttribute="bottom" secondItem="OrO-iH-qAS" secondAttribute="bottom" constant="1" id="ahM-RJ-Vxh"/>
+                                    <constraint firstItem="Mo7-ue-DhM" firstAttribute="leading" secondItem="NG6-gl-vk2" secondAttribute="leading" constant="1" id="ast-Ot-HGJ"/>
+                                    <constraint firstItem="rFR-hf-5TY" firstAttribute="top" secondItem="rMN-Lr-8ru" secondAttribute="bottom" constant="1" id="da3-5c-fqX"/>
+                                    <constraint firstItem="OrO-iH-qAS" firstAttribute="width" secondItem="NG6-gl-vk2" secondAttribute="width" multiplier="0.245" id="doq-7z-wVj"/>
+                                    <constraint firstItem="g3v-Ia-l86" firstAttribute="width" secondItem="NG6-gl-vk2" secondAttribute="width" multiplier="0.2475" id="hGi-Ai-AZt"/>
+                                    <constraint firstAttribute="trailing" secondItem="sDB-9h-BII" secondAttribute="trailing" constant="1" id="hhM-cP-28c"/>
+                                    <constraint firstItem="FUA-pR-ROx" firstAttribute="top" secondItem="g3v-Ia-l86" secondAttribute="bottom" constant="1" id="hw6-Yd-D4k"/>
+                                    <constraint firstItem="kRA-9x-9Nl" firstAttribute="leading" secondItem="3u1-zf-Ffi" secondAttribute="trailing" constant="1" id="hze-Vh-z0d"/>
+                                    <constraint firstItem="ZnV-de-Omk" firstAttribute="width" secondItem="NG6-gl-vk2" secondAttribute="width" multiplier="0.245" id="iPC-Tn-PAz"/>
+                                    <constraint firstItem="g3v-Ia-l86" firstAttribute="leading" secondItem="zQR-aC-eh0" secondAttribute="trailing" constant="1" id="jMA-tE-cul"/>
+                                    <constraint firstAttribute="trailing" secondItem="kRA-9x-9Nl" secondAttribute="trailing" constant="1" id="kH2-v8-gQW"/>
+                                    <constraint firstItem="kRA-9x-9Nl" firstAttribute="width" secondItem="NG6-gl-vk2" secondAttribute="width" multiplier="0.245" id="kmN-Vg-OK4"/>
+                                    <constraint firstItem="sDB-9h-BII" firstAttribute="leading" secondItem="yth-P1-Beq" secondAttribute="trailing" constant="1" id="mIO-DW-wkB"/>
+                                    <constraint firstItem="kRA-9x-9Nl" firstAttribute="height" secondItem="NG6-gl-vk2" secondAttribute="height" multiplier="0.2" id="mci-DC-AjZ"/>
+                                    <constraint firstItem="ocS-9r-gQA" firstAttribute="top" secondItem="ZnV-de-Omk" secondAttribute="bottom" constant="1" id="nN1-ce-DQH"/>
+                                    <constraint firstItem="ZnV-de-Omk" firstAttribute="leading" secondItem="gyx-VH-1gk" secondAttribute="trailing" constant="1" id="nUZ-DP-q8J"/>
+                                    <constraint firstItem="g3v-Ia-l86" firstAttribute="height" secondItem="NG6-gl-vk2" secondAttribute="height" multiplier="0.2" id="nfq-M3-JRP"/>
+                                    <constraint firstItem="OrO-iH-qAS" firstAttribute="top" secondItem="ocS-9r-gQA" secondAttribute="bottom" constant="1" id="o2x-xq-F7B"/>
+                                    <constraint firstItem="kRA-9x-9Nl" firstAttribute="top" secondItem="sDB-9h-BII" secondAttribute="bottom" constant="1" id="om8-0b-lWg"/>
+                                    <constraint firstItem="gyx-VH-1gk" firstAttribute="top" secondItem="3u1-zf-Ffi" secondAttribute="bottom" constant="1" id="pE3-ai-xHC"/>
+                                    <constraint firstItem="3u1-zf-Ffi" firstAttribute="width" secondItem="NG6-gl-vk2" secondAttribute="width" multiplier="0.2475" id="pog-Eh-Bze"/>
+                                    <constraint firstItem="zQR-aC-eh0" firstAttribute="leading" secondItem="NG6-gl-vk2" secondAttribute="leading" constant="1" id="qpS-cK-p5g"/>
+                                    <constraint firstItem="RrI-jU-FoU" firstAttribute="top" secondItem="zQR-aC-eh0" secondAttribute="bottom" constant="1" id="s0P-aY-0Tg"/>
+                                    <constraint firstItem="roG-LD-70u" firstAttribute="height" secondItem="NG6-gl-vk2" secondAttribute="height" multiplier="0.2" id="sU6-5g-Exr"/>
+                                    <constraint firstItem="roG-LD-70u" firstAttribute="width" secondItem="NG6-gl-vk2" secondAttribute="width" multiplier="0.2475" id="sel-pM-PpH"/>
+                                    <constraint firstItem="rMN-Lr-8ru" firstAttribute="top" secondItem="ihi-zW-k0a" secondAttribute="bottom" constant="1" id="siH-6g-ZLO"/>
+                                    <constraint firstItem="rMN-Lr-8ru" firstAttribute="width" secondItem="NG6-gl-vk2" secondAttribute="width" multiplier="0.2475" id="vHz-jg-PFb"/>
+                                    <constraint firstItem="OrO-iH-qAS" firstAttribute="leading" secondItem="LYm-iR-MPm" secondAttribute="trailing" constant="1" id="vai-he-YUN"/>
+                                    <constraint firstItem="gyx-VH-1gk" firstAttribute="width" secondItem="NG6-gl-vk2" secondAttribute="width" multiplier="0.2475" id="wDm-CU-afy"/>
+                                    <constraint firstItem="rMN-Lr-8ru" firstAttribute="leading" secondItem="Mo7-ue-DhM" secondAttribute="trailing" constant="1" id="xiO-x3-f3G"/>
+                                    <constraint firstItem="3u1-zf-Ffi" firstAttribute="top" secondItem="yth-P1-Beq" secondAttribute="bottom" constant="1" id="yKl-15-cdF"/>
+                                    <constraint firstItem="Mo7-ue-DhM" firstAttribute="width" secondItem="NG6-gl-vk2" secondAttribute="width" multiplier="0.245" id="zbp-vH-8p0"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="iwk-lJ-3R2"/>
+                                        <exclude reference="ihi-zW-k0a"/>
+                                        <exclude reference="yth-P1-Beq"/>
+                                        <exclude reference="sDB-9h-BII"/>
+                                        <exclude reference="Mo7-ue-DhM"/>
+                                        <exclude reference="rMN-Lr-8ru"/>
+                                        <exclude reference="3u1-zf-Ffi"/>
+                                        <exclude reference="kRA-9x-9Nl"/>
+                                        <exclude reference="ArK-6f-Tmw"/>
+                                        <exclude reference="rFR-hf-5TY"/>
+                                        <exclude reference="gyx-VH-1gk"/>
+                                        <exclude reference="ZnV-de-Omk"/>
+                                        <exclude reference="zQR-aC-eh0"/>
+                                        <exclude reference="g3v-Ia-l86"/>
+                                        <exclude reference="roG-LD-70u"/>
+                                        <exclude reference="ocS-9r-gQA"/>
+                                        <exclude reference="RrI-jU-FoU"/>
+                                        <exclude reference="FUA-pR-ROx"/>
+                                        <exclude reference="LYm-iR-MPm"/>
+                                        <exclude reference="OrO-iH-qAS"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="iwk-lJ-3R2"/>
+                                        <include reference="ihi-zW-k0a"/>
+                                        <include reference="yth-P1-Beq"/>
+                                        <include reference="sDB-9h-BII"/>
+                                        <include reference="Mo7-ue-DhM"/>
+                                        <include reference="rMN-Lr-8ru"/>
+                                        <include reference="3u1-zf-Ffi"/>
+                                        <include reference="kRA-9x-9Nl"/>
+                                        <include reference="ArK-6f-Tmw"/>
+                                        <include reference="rFR-hf-5TY"/>
+                                        <include reference="gyx-VH-1gk"/>
+                                        <include reference="ZnV-de-Omk"/>
+                                        <include reference="zQR-aC-eh0"/>
+                                        <include reference="g3v-Ia-l86"/>
+                                        <include reference="roG-LD-70u"/>
+                                        <include reference="ocS-9r-gQA"/>
+                                        <include reference="RrI-jU-FoU"/>
+                                        <include reference="FUA-pR-ROx"/>
+                                        <include reference="LYm-iR-MPm"/>
+                                        <include reference="OrO-iH-qAS"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g4x-Fq-gpV" userLabel="Buttons View Land">
+                                <rect key="frame" x="0.0" y="99.5" width="896" height="314.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkb-RW-IRI">
+                                        <rect key="frame" x="1" y="1" width="89.5" height="63"/>
+                                        <color key="backgroundColor" name="calculator button landscape"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="(">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="B3D-MW-z9d"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzr-Ou-ENX">
+                                        <rect key="frame" x="91.5" y="1" width="89.5" height="63"/>
+                                        <color key="backgroundColor" name="calculator button landscape"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title=")">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="23f-7X-UfH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ut-cg-9Ok">
+                                        <rect key="frame" x="182" y="1" width="90" height="63"/>
+                                        <color key="backgroundColor" name="calculator button landscape"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="mc">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="jX9-4y-nJV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oti-Rl-OOq">
+                                        <rect key="frame" x="273" y="1" width="89.5" height="63"/>
+                                        <color key="backgroundColor" name="calculator button landscape"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="m+">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="3s8-Ma-gzh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kuj-wf-KjX">
+                                        <rect key="frame" x="363.5" y="1" width="89.5" height="63"/>
+                                        <color key="backgroundColor" name="calculator button landscape"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="m-">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="UJ1-kH-AQm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3iu-7t-Rqs">
+                                        <rect key="frame" x="454" y="1" width="87.5" height="63"/>
+                                        <color key="backgroundColor" name="calculator button landscape"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="mr">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="r0h-LR-yKY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gca-Zs-dhN">
+                                        <rect key="frame" x="542.5" y="1" width="87.5" height="63"/>
+                                        <color key="backgroundColor" name="calculator button extra"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="AC">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="acPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="foP-Vk-5Ik"/>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="baO-6a-fvl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5YT-zf-PHz">
+                                        <rect key="frame" x="631" y="1" width="87.5" height="63"/>
+                                        <color key="backgroundColor" name="calculator button extra"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="±">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="n5H-NX-GXr"/>
+                                            <action selector="signPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="K6N-Jz-Nk9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6t-Dp-Vwc">
+                                        <rect key="frame" x="719.5" y="1" width="87" height="63"/>
+                                        <color key="backgroundColor" name="calculator button operators"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="%">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="lyF-So-8Lq"/>
+                                            <action selector="operatorPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="f7M-Q9-Ved"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHi-7p-GhX">
+                                        <rect key="frame" x="807.5" y="1" width="87.5" height="63"/>
+                                        <color key="backgroundColor" name="calculator button operators"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="÷">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="clf-Hk-JYF"/>
+                                            <action selector="operatorPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="prf-CV-Vmx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7T-A3-Bkc">
+                                        <rect key="frame" x="1" y="65" width="89.5" height="63"/>
+                                        <color key="backgroundColor" name="calculator button landscape"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="AC">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="oRK-dt-N4h"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBl-SL-z95">
+                                        <rect key="frame" x="91.5" y="65" width="89.5" height="63"/>
+                                        <color key="backgroundColor" name="calculator button landscape"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="AC">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="CEN-s5-73B"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMu-ac-1Mt">
+                                        <rect key="frame" x="182" y="65" width="90" height="63"/>
+                                        <color key="backgroundColor" name="calculator button landscape"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="AC">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="6DP-ON-G9i"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qb4-PJ-NTM">
+                                        <rect key="frame" x="273" y="65" width="89.5" height="63"/>
+                                        <color key="backgroundColor" name="calculator button landscape"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="AC">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="cVc-uW-l4g"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRc-Ep-88e">
+                                        <rect key="frame" x="363.5" y="65" width="89.5" height="63"/>
+                                        <color key="backgroundColor" name="calculator button landscape"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="AC">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="q38-5x-Uux"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLa-cg-Msc">
+                                        <rect key="frame" x="454" y="65" width="87.5" height="63"/>
+                                        <color key="backgroundColor" name="calculator button landscape"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="AC">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="sfC-2S-x2F"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXt-wp-u7B">
+                                        <rect key="frame" x="542.5" y="65" width="87.5" height="63"/>
+                                        <color key="backgroundColor" name="calculator button"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="7">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="n7R-p1-QIh"/>
+                                            <action selector="digitPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="TrE-4Y-xgH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCa-nZ-CQT">
+                                        <rect key="frame" x="631" y="65" width="87.5" height="63"/>
+                                        <color key="backgroundColor" name="calculator button"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="8">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="GYC-GJ-hLt"/>
+                                            <action selector="digitPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="rIz-7v-hYj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAy-9Y-wfZ">
+                                        <rect key="frame" x="719.5" y="65" width="87" height="63"/>
+                                        <color key="backgroundColor" name="calculator button"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="9">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="k4K-6Y-Gb7"/>
+                                            <action selector="digitPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="sfR-gg-UgJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFZ-29-D0z">
+                                        <rect key="frame" x="807.5" y="65" width="87.5" height="63"/>
+                                        <color key="backgroundColor" name="calculator button operators"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="×">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="Zl2-uN-PQQ"/>
+                                            <action selector="operatorPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="Nq9-l3-pk5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myw-E5-xG9">
+                                        <rect key="frame" x="1" y="129" width="89.5" height="62.5"/>
+                                        <color key="backgroundColor" name="calculator button landscape"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="AC">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="vzw-ND-t79"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJn-Gf-UsZ">
+                                        <rect key="frame" x="91.5" y="129" width="89.5" height="62.5"/>
+                                        <color key="backgroundColor" name="calculator button landscape"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="AC">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="0A0-Ba-feH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="728-El-e3F">
+                                        <rect key="frame" x="182" y="129" width="90" height="62.5"/>
+                                        <color key="backgroundColor" name="calculator button landscape"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="AC">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="Ihp-Nu-ptV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6oh-7X-4ci">
+                                        <rect key="frame" x="273" y="129" width="89.5" height="62.5"/>
+                                        <color key="backgroundColor" name="calculator button landscape"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="AC">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="WrD-eo-Vf5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQW-uw-vbq">
+                                        <rect key="frame" x="363.5" y="129" width="89.5" height="62.5"/>
+                                        <color key="backgroundColor" name="calculator button landscape"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="AC">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="yhc-h0-Lfd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wq5-Va-wQN">
+                                        <rect key="frame" x="454" y="129" width="87.5" height="62.5"/>
+                                        <color key="backgroundColor" name="calculator button landscape"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="AC">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="JQ9-XZ-SDr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CsT-Kt-bBg">
+                                        <rect key="frame" x="542.5" y="129" width="87.5" height="62.5"/>
+                                        <color key="backgroundColor" name="calculator button"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="4">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="lGf-hq-FA3"/>
+                                            <action selector="digitPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="RaG-Qk-4Oy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YpT-Lj-ZJw">
+                                        <rect key="frame" x="631" y="129" width="87.5" height="62.5"/>
+                                        <color key="backgroundColor" name="calculator button"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="5">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="rdc-Tm-WUj"/>
+                                            <action selector="digitPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="3AY-4b-3og"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmF-G1-Yiq">
+                                        <rect key="frame" x="719.5" y="129" width="87" height="62.5"/>
+                                        <color key="backgroundColor" name="calculator button"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="6">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="DPX-0q-Gsd"/>
+                                            <action selector="digitPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="cnl-fL-E5L"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Re6-rg-VRR">
+                                        <rect key="frame" x="807.5" y="129" width="87.5" height="62.5"/>
+                                        <color key="backgroundColor" name="calculator button operators"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="-">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="Dz6-z1-0Mc"/>
+                                            <action selector="operatorPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="gMb-Mj-qay"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eor-OW-1uo">
+                                        <rect key="frame" x="1" y="192.5" width="89.5" height="63"/>
+                                        <color key="backgroundColor" name="calculator button landscape"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="AC">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="Giw-1t-Z1U"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9FW-qQ-z6D">
+                                        <rect key="frame" x="91.5" y="192.5" width="89.5" height="63"/>
+                                        <color key="backgroundColor" name="calculator button landscape"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="AC">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="yDY-EV-Z4h"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7iy-WN-pWq">
+                                        <rect key="frame" x="182" y="192.5" width="90" height="63"/>
+                                        <color key="backgroundColor" name="calculator button landscape"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="AC">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="uiJ-Nt-UDU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16m-GJ-zJL">
+                                        <rect key="frame" x="273" y="192.5" width="89.5" height="63"/>
+                                        <color key="backgroundColor" name="calculator button landscape"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="AC">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="xje-w7-Gtb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZX8-3V-gHM">
+                                        <rect key="frame" x="363.5" y="192.5" width="89.5" height="63"/>
+                                        <color key="backgroundColor" name="calculator button landscape"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="AC">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="tDK-q0-y6k"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDE-gk-bdO">
+                                        <rect key="frame" x="454" y="192.5" width="87.5" height="63"/>
+                                        <color key="backgroundColor" name="calculator button landscape"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="AC">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="rBV-DA-oD1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRa-hi-1NN">
+                                        <rect key="frame" x="542.5" y="192.5" width="87.5" height="63"/>
+                                        <color key="backgroundColor" name="calculator button"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="1">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="v89-b0-Ejs"/>
+                                            <action selector="digitPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="cic-d8-pBh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ech-Wh-l0T">
+                                        <rect key="frame" x="631" y="192.5" width="87.5" height="63"/>
+                                        <color key="backgroundColor" name="calculator button"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="2">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="DnV-5h-gPS"/>
+                                            <action selector="digitPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="KvA-ff-cOB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ScD-gE-sv4">
+                                        <rect key="frame" x="719.5" y="192.5" width="87" height="63"/>
+                                        <color key="backgroundColor" name="calculator button"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="3">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="10i-J3-Iop"/>
+                                            <action selector="digitPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="2ol-Jh-cc8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWo-OA-GEZ">
+                                        <rect key="frame" x="807.5" y="192.5" width="87.5" height="63"/>
+                                        <color key="backgroundColor" name="calculator button operators"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="+">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="KXU-PI-U3C"/>
+                                            <action selector="operatorPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="w3H-Qp-DQ2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dxu-Mf-mj4">
+                                        <rect key="frame" x="1" y="257" width="89.5" height="56.5"/>
+                                        <color key="backgroundColor" name="calculator button landscape"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="AC">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="mk9-ym-KT4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWY-Qq-UCC">
+                                        <rect key="frame" x="91.5" y="257" width="89.5" height="56.5"/>
+                                        <color key="backgroundColor" name="calculator button landscape"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="AC">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="gsS-Ua-Z17"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBn-ti-2J9">
+                                        <rect key="frame" x="182" y="257" width="90" height="56.5"/>
+                                        <color key="backgroundColor" name="calculator button landscape"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="AC">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="7B2-TF-a8U"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ww-ai-4JF">
+                                        <rect key="frame" x="273" y="257" width="89.5" height="56.5"/>
+                                        <color key="backgroundColor" name="calculator button landscape"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="AC">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="45Z-NK-dVH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gf-2m-fRG">
+                                        <rect key="frame" x="363.5" y="257" width="89.5" height="56.5"/>
+                                        <color key="backgroundColor" name="calculator button landscape"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="AC">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="wK0-wq-ike"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cU1-nr-bCJ">
+                                        <rect key="frame" x="454" y="257" width="87.5" height="56.5"/>
+                                        <color key="backgroundColor" name="calculator button landscape"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="AC">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="Fuf-m3-cqf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rwk-3a-vSV">
+                                        <rect key="frame" x="542.5" y="257" width="87.5" height="56.5"/>
+                                        <color key="backgroundColor" name="calculator button extra"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="⌫">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="vP3-0S-IGS"/>
+                                            <action selector="clearPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="VHo-up-Dc1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mlO-PH-CvU">
+                                        <rect key="frame" x="631" y="257" width="87.5" height="56.5"/>
+                                        <color key="backgroundColor" name="calculator button"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="0">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="Ntf-Pa-OwL"/>
+                                            <action selector="digitPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="M8Z-ZL-SBF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tea-oo-TGe">
+                                        <rect key="frame" x="719.5" y="257" width="87" height="56.5"/>
+                                        <color key="backgroundColor" name="calculator button extra"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title=".">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="OUh-Jh-Epc"/>
+                                            <action selector="decimalPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="Wnk-Au-J7E"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctk-q8-7eG">
+                                        <rect key="frame" x="807.5" y="257" width="87.5" height="56.5"/>
+                                        <color key="backgroundColor" name="calculator button operators"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="=">
+                                            <color key="titleColor" name="calculator text"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonFlash:" destination="aL9-0c-rHn" eventType="touchUpInside" id="oIa-1a-zqr"/>
+                                            <action selector="equalPressed:" destination="aL9-0c-rHn" eventType="touchUpInside" id="OP4-oc-YOl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="dRa-hi-1NN" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.0975" id="01F-Re-4vQ"/>
+                                    <constraint firstItem="fkb-RW-IRI" firstAttribute="leading" secondItem="g4x-Fq-gpV" secondAttribute="leading" constant="1" id="05T-3I-N2r"/>
+                                    <constraint firstItem="1Ww-ai-4JF" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.1" id="06h-KR-nWA"/>
+                                    <constraint firstItem="RBl-SL-z95" firstAttribute="top" secondItem="pzr-Ou-ENX" secondAttribute="bottom" constant="1" id="0Q4-Ox-VqK"/>
+                                    <constraint firstItem="Wq5-Va-wQN" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.0975" id="0UB-DV-Px1"/>
+                                    <constraint firstItem="ScD-gE-sv4" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.2" id="1Sb-YO-Zew"/>
+                                    <constraint firstItem="CWo-OA-GEZ" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.2" id="1jF-nZ-eL0"/>
+                                    <constraint firstItem="7iy-WN-pWq" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.1" id="2BU-OL-X0S"/>
+                                    <constraint firstItem="rmF-G1-Yiq" firstAttribute="top" secondItem="vAy-9Y-wfZ" secondAttribute="bottom" constant="1" id="2Fd-kg-4Gd"/>
+                                    <constraint firstItem="bFZ-29-D0z" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.0975" id="2NO-DU-qKf"/>
+                                    <constraint firstItem="yCa-nZ-CQT" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.0975" id="2S3-EJ-FVF"/>
+                                    <constraint firstItem="ScD-gE-sv4" firstAttribute="top" secondItem="rmF-G1-Yiq" secondAttribute="bottom" constant="1" id="2lI-6M-h1B"/>
+                                    <constraint firstItem="5YT-zf-PHz" firstAttribute="leading" secondItem="Gca-Zs-dhN" secondAttribute="trailing" constant="1" id="37z-hH-2iA"/>
+                                    <constraint firstItem="YpT-Lj-ZJw" firstAttribute="leading" secondItem="CsT-Kt-bBg" secondAttribute="trailing" constant="1" id="39P-4Q-A43"/>
+                                    <constraint firstItem="ZLa-cg-Msc" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.0975" id="3LZ-Tl-Z5e"/>
+                                    <constraint firstAttribute="bottom" secondItem="ctk-q8-7eG" secondAttribute="bottom" constant="1" id="42U-fz-7zM"/>
+                                    <constraint firstItem="pzr-Ou-ENX" firstAttribute="leading" secondItem="fkb-RW-IRI" secondAttribute="trailing" constant="1" id="4Ad-wQ-5W3"/>
+                                    <constraint firstItem="dDE-gk-bdO" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.2" id="4Ky-Ax-jHn"/>
+                                    <constraint firstItem="myw-E5-xG9" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.1" id="4j3-ev-CUp"/>
+                                    <constraint firstItem="6oh-7X-4ci" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.1" id="513-sT-YVe"/>
+                                    <constraint firstItem="cU1-nr-bCJ" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.0975" id="5rw-9y-yQ1"/>
+                                    <constraint firstItem="h6t-Dp-Vwc" firstAttribute="top" secondItem="g4x-Fq-gpV" secondAttribute="top" constant="1" id="6et-ol-4Fj"/>
+                                    <constraint firstItem="Dxu-Mf-mj4" firstAttribute="leading" secondItem="g4x-Fq-gpV" secondAttribute="leading" constant="1" id="73v-jF-5xQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="cU1-nr-bCJ" secondAttribute="bottom" constant="1" id="7eS-cA-UmJ"/>
+                                    <constraint firstItem="AMu-ac-1Mt" firstAttribute="leading" secondItem="RBl-SL-z95" secondAttribute="trailing" constant="1" id="84d-Zd-iv8"/>
+                                    <constraint firstItem="YpT-Lj-ZJw" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.2" id="8dF-rU-LN7"/>
+                                    <constraint firstItem="Oti-Rl-OOq" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.1" id="8zW-WC-KLe"/>
+                                    <constraint firstItem="Gca-Zs-dhN" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.2" id="9G3-Ua-pHr"/>
+                                    <constraint firstItem="uRc-Ep-88e" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.2" id="9Z6-2D-ewa"/>
+                                    <constraint firstItem="lHi-7p-GhX" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.2" id="9bb-Ih-uNt"/>
+                                    <constraint firstAttribute="bottom" secondItem="1Ww-ai-4JF" secondAttribute="bottom" constant="1" id="AeI-Fs-Z9e"/>
+                                    <constraint firstAttribute="bottom" secondItem="tea-oo-TGe" secondAttribute="bottom" constant="1" id="AlL-Bd-SfV"/>
+                                    <constraint firstItem="rmF-G1-Yiq" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.0975" id="BXx-WB-EcR"/>
+                                    <constraint firstItem="yCa-nZ-CQT" firstAttribute="leading" secondItem="aXt-wp-u7B" secondAttribute="trailing" constant="1" id="Bcr-dt-KQh"/>
+                                    <constraint firstItem="YpT-Lj-ZJw" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.0975" id="Bel-Ch-znJ"/>
+                                    <constraint firstItem="Ech-Wh-l0T" firstAttribute="top" secondItem="YpT-Lj-ZJw" secondAttribute="bottom" constant="1" id="Bj3-vR-kWY"/>
+                                    <constraint firstItem="MJn-Gf-UsZ" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.1" id="Bzm-EU-Rlk"/>
+                                    <constraint firstAttribute="trailing" secondItem="bFZ-29-D0z" secondAttribute="trailing" constant="1" id="C5C-Va-RYT"/>
+                                    <constraint firstItem="RBl-SL-z95" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.1" id="CC2-H8-Dxj"/>
+                                    <constraint firstItem="CsT-Kt-bBg" firstAttribute="top" secondItem="aXt-wp-u7B" secondAttribute="bottom" constant="1" id="CQ5-yx-nGB"/>
+                                    <constraint firstItem="mlO-PH-CvU" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.0975" id="Ckb-Hq-0fe"/>
+                                    <constraint firstItem="CsT-Kt-bBg" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.0975" id="Cnk-sH-wCv"/>
+                                    <constraint firstItem="lHi-7p-GhX" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.0975" id="DyI-1P-3cn"/>
+                                    <constraint firstItem="bFZ-29-D0z" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.2" id="E2d-3W-ofL"/>
+                                    <constraint firstItem="ZLa-cg-Msc" firstAttribute="top" secondItem="3iu-7t-Rqs" secondAttribute="bottom" constant="1" id="ERg-gG-sKM"/>
+                                    <constraint firstItem="tea-oo-TGe" firstAttribute="leading" secondItem="mlO-PH-CvU" secondAttribute="trailing" constant="1" id="EYY-Ei-VhY"/>
+                                    <constraint firstItem="16m-GJ-zJL" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.2" id="Edd-ek-brA"/>
+                                    <constraint firstItem="dRa-hi-1NN" firstAttribute="leading" secondItem="dDE-gk-bdO" secondAttribute="trailing" constant="1" id="EsT-IM-The"/>
+                                    <constraint firstItem="Ech-Wh-l0T" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.2" id="F4T-OC-zOs"/>
+                                    <constraint firstItem="ScD-gE-sv4" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.0975" id="FIV-Yy-dLg"/>
+                                    <constraint firstItem="7iy-WN-pWq" firstAttribute="leading" secondItem="9FW-qQ-z6D" secondAttribute="trailing" constant="1" id="FIb-Ky-BtD"/>
+                                    <constraint firstItem="ZX8-3V-gHM" firstAttribute="top" secondItem="pQW-uw-vbq" secondAttribute="bottom" constant="1" id="FO3-d6-3ZW"/>
+                                    <constraint firstItem="RBl-SL-z95" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.2" id="Fuc-QD-u8r"/>
+                                    <constraint firstItem="9ut-cg-9Ok" firstAttribute="leading" secondItem="pzr-Ou-ENX" secondAttribute="trailing" constant="1" id="Fwb-De-nal"/>
+                                    <constraint firstItem="9ut-cg-9Ok" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.1" id="G2E-a8-8Y3"/>
+                                    <constraint firstItem="CsT-Kt-bBg" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.2" id="GL7-Iy-Udo"/>
+                                    <constraint firstItem="j7T-A3-Bkc" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.2" id="H8l-Lx-m0F"/>
+                                    <constraint firstItem="728-El-e3F" firstAttribute="leading" secondItem="MJn-Gf-UsZ" secondAttribute="trailing" constant="1" id="Hxb-4d-YCh"/>
+                                    <constraint firstItem="vAy-9Y-wfZ" firstAttribute="top" secondItem="h6t-Dp-Vwc" secondAttribute="bottom" constant="1" id="Hzj-zh-foI"/>
+                                    <constraint firstItem="CWo-OA-GEZ" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.0975" id="JHV-Nu-KT1"/>
+                                    <constraint firstItem="WWY-Qq-UCC" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.18" id="Jae-V1-V9I"/>
+                                    <constraint firstItem="16m-GJ-zJL" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.1" id="Jt3-ix-EYe"/>
+                                    <constraint firstItem="YBn-ti-2J9" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.18" id="JtP-JZ-zaz"/>
+                                    <constraint firstItem="myw-E5-xG9" firstAttribute="leading" secondItem="g4x-Fq-gpV" secondAttribute="leading" constant="1" id="JwV-bX-kmM"/>
+                                    <constraint firstItem="ctk-q8-7eG" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.18" id="KN8-QE-rcG"/>
+                                    <constraint firstItem="Oti-Rl-OOq" firstAttribute="top" secondItem="g4x-Fq-gpV" secondAttribute="top" constant="1" id="Kan-uN-X9S"/>
+                                    <constraint firstItem="Re6-rg-VRR" firstAttribute="leading" secondItem="rmF-G1-Yiq" secondAttribute="trailing" constant="1" id="KjY-x0-mWY"/>
+                                    <constraint firstItem="1Ww-ai-4JF" firstAttribute="leading" secondItem="YBn-ti-2J9" secondAttribute="trailing" constant="1" id="Kyt-gP-4Mp"/>
+                                    <constraint firstItem="fkb-RW-IRI" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.2" id="LKC-kX-uld"/>
+                                    <constraint firstItem="aXt-wp-u7B" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.2" id="LP0-3s-esW"/>
+                                    <constraint firstItem="myw-E5-xG9" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.2" id="LbT-bO-E6X"/>
+                                    <constraint firstItem="ZX8-3V-gHM" firstAttribute="leading" secondItem="16m-GJ-zJL" secondAttribute="trailing" constant="1" id="Lja-ys-6CK"/>
+                                    <constraint firstAttribute="bottom" secondItem="WWY-Qq-UCC" secondAttribute="bottom" constant="1" id="Lsv-u6-7um"/>
+                                    <constraint firstItem="7iy-WN-pWq" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.2" id="M43-hl-VAB"/>
+                                    <constraint firstAttribute="bottom" secondItem="YBn-ti-2J9" secondAttribute="bottom" constant="1" id="M6I-Sb-IS9"/>
+                                    <constraint firstItem="pzr-Ou-ENX" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.1" id="MPO-Q2-xgZ"/>
+                                    <constraint firstItem="ScD-gE-sv4" firstAttribute="leading" secondItem="Ech-Wh-l0T" secondAttribute="trailing" constant="1" id="N9t-s1-CeR"/>
+                                    <constraint firstItem="MJn-Gf-UsZ" firstAttribute="top" secondItem="RBl-SL-z95" secondAttribute="bottom" constant="1" id="NaD-fw-XIQ"/>
+                                    <constraint firstItem="YBn-ti-2J9" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.1" id="O2U-89-rDZ"/>
+                                    <constraint firstItem="7iy-WN-pWq" firstAttribute="top" secondItem="728-El-e3F" secondAttribute="bottom" constant="1" id="O5M-QR-eL6"/>
+                                    <constraint firstItem="Gca-Zs-dhN" firstAttribute="top" secondItem="g4x-Fq-gpV" secondAttribute="top" constant="1" id="OAd-UJ-8Ok"/>
+                                    <constraint firstItem="pQW-uw-vbq" firstAttribute="top" secondItem="uRc-Ep-88e" secondAttribute="bottom" constant="1" id="OUN-dS-ve8"/>
+                                    <constraint firstItem="3gf-2m-fRG" firstAttribute="leading" secondItem="1Ww-ai-4JF" secondAttribute="trailing" constant="1" id="QFr-c5-RLb"/>
+                                    <constraint firstItem="dRa-hi-1NN" firstAttribute="top" secondItem="CsT-Kt-bBg" secondAttribute="bottom" constant="1" id="Qh9-jS-dCY"/>
+                                    <constraint firstItem="aXt-wp-u7B" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.0975" id="QsX-8R-1nt"/>
+                                    <constraint firstItem="rwk-3a-vSV" firstAttribute="leading" secondItem="cU1-nr-bCJ" secondAttribute="trailing" constant="1" id="Rb5-xE-tRj"/>
+                                    <constraint firstItem="dDE-gk-bdO" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.0975" id="Rgm-cw-UK7"/>
+                                    <constraint firstItem="5YT-zf-PHz" firstAttribute="top" secondItem="g4x-Fq-gpV" secondAttribute="top" constant="1" id="Ros-nf-3QV"/>
+                                    <constraint firstItem="728-El-e3F" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.1" id="SKP-aI-vcQ"/>
+                                    <constraint firstItem="eor-OW-1uo" firstAttribute="top" secondItem="myw-E5-xG9" secondAttribute="bottom" constant="1" id="Sdt-Jx-sMU"/>
+                                    <constraint firstItem="qb4-PJ-NTM" firstAttribute="leading" secondItem="AMu-ac-1Mt" secondAttribute="trailing" constant="1" id="SwX-1M-Sjv"/>
+                                    <constraint firstItem="pQW-uw-vbq" firstAttribute="leading" secondItem="6oh-7X-4ci" secondAttribute="trailing" constant="1" id="TaX-W4-DiX"/>
+                                    <constraint firstItem="qb4-PJ-NTM" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.2" id="TiU-gO-bqe"/>
+                                    <constraint firstItem="9ut-cg-9Ok" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.2" id="Tyq-SX-oG3"/>
+                                    <constraint firstItem="5YT-zf-PHz" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.2" id="U14-gI-Fca"/>
+                                    <constraint firstItem="ctk-q8-7eG" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.0975" id="ULO-Ml-5pt"/>
+                                    <constraint firstItem="yCa-nZ-CQT" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.2" id="Upb-wH-sKS"/>
+                                    <constraint firstItem="h6t-Dp-Vwc" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.0975" id="Uyc-NG-LQT"/>
+                                    <constraint firstItem="9FW-qQ-z6D" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.1" id="VCa-hD-Obe"/>
+                                    <constraint firstItem="ZX8-3V-gHM" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.1" id="VLi-8U-zwP"/>
+                                    <constraint firstItem="9FW-qQ-z6D" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.2" id="VM6-IP-jPd"/>
+                                    <constraint firstAttribute="bottom" secondItem="Dxu-Mf-mj4" secondAttribute="bottom" constant="1" id="VNa-Ec-RKe"/>
+                                    <constraint firstItem="eor-OW-1uo" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.2" id="Vig-9x-UyB"/>
+                                    <constraint firstItem="WWY-Qq-UCC" firstAttribute="leading" secondItem="Dxu-Mf-mj4" secondAttribute="trailing" constant="1" id="WCa-av-Otp"/>
+                                    <constraint firstItem="uRc-Ep-88e" firstAttribute="leading" secondItem="qb4-PJ-NTM" secondAttribute="trailing" constant="1" id="WUv-JI-T1U"/>
+                                    <constraint firstItem="vAy-9Y-wfZ" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.0975" id="XdI-oF-eXB"/>
+                                    <constraint firstItem="cU1-nr-bCJ" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.18" id="XpX-VN-vhI"/>
+                                    <constraint firstItem="vAy-9Y-wfZ" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.2" id="YEy-hx-6JQ"/>
+                                    <constraint firstItem="CWo-OA-GEZ" firstAttribute="top" secondItem="Re6-rg-VRR" secondAttribute="bottom" constant="1" id="ZZw-sT-qjh"/>
+                                    <constraint firstItem="lHi-7p-GhX" firstAttribute="top" secondItem="g4x-Fq-gpV" secondAttribute="top" constant="1" id="ZdF-rT-AT8"/>
+                                    <constraint firstItem="vAy-9Y-wfZ" firstAttribute="leading" secondItem="yCa-nZ-CQT" secondAttribute="trailing" constant="1" id="Zh5-N9-as0"/>
+                                    <constraint firstItem="AMu-ac-1Mt" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.2" id="a6F-qr-Exh"/>
+                                    <constraint firstItem="9FW-qQ-z6D" firstAttribute="leading" secondItem="eor-OW-1uo" secondAttribute="trailing" constant="1" id="aAe-EY-fmF"/>
+                                    <constraint firstItem="WWY-Qq-UCC" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.1" id="akC-Fo-6aq"/>
+                                    <constraint firstItem="yCa-nZ-CQT" firstAttribute="top" secondItem="5YT-zf-PHz" secondAttribute="bottom" constant="1" id="bMj-t3-sBD"/>
+                                    <constraint firstItem="j7T-A3-Bkc" firstAttribute="top" secondItem="fkb-RW-IRI" secondAttribute="bottom" constant="1" id="bPN-hz-bpo"/>
+                                    <constraint firstItem="ZLa-cg-Msc" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.2" id="bRG-Bm-ovi"/>
+                                    <constraint firstItem="AMu-ac-1Mt" firstAttribute="top" secondItem="9ut-cg-9Ok" secondAttribute="bottom" constant="1" id="bog-Y0-jZS"/>
+                                    <constraint firstItem="Ech-Wh-l0T" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.0975" id="bsU-4o-IPQ"/>
+                                    <constraint firstItem="MJn-Gf-UsZ" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.2" id="bu3-KV-2gC"/>
+                                    <constraint firstItem="Re6-rg-VRR" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.0975" id="c4R-R8-55Z"/>
+                                    <constraint firstItem="ZX8-3V-gHM" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.2" id="c4r-Cq-Nkw"/>
+                                    <constraint firstItem="tea-oo-TGe" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.0975" id="c6b-F7-pht"/>
+                                    <constraint firstItem="3gf-2m-fRG" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.18" id="cba-Cg-JfY"/>
+                                    <constraint firstItem="6oh-7X-4ci" firstAttribute="top" secondItem="qb4-PJ-NTM" secondAttribute="bottom" constant="1" id="ctx-bC-tVQ"/>
+                                    <constraint firstItem="rwk-3a-vSV" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.18" id="dGe-V1-ZpJ"/>
+                                    <constraint firstItem="kuj-wf-KjX" firstAttribute="top" secondItem="g4x-Fq-gpV" secondAttribute="top" constant="1" id="dwT-i1-n2g"/>
+                                    <constraint firstItem="uRc-Ep-88e" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.1" id="e5A-fU-tXt"/>
+                                    <constraint firstItem="pzr-Ou-ENX" firstAttribute="top" secondItem="g4x-Fq-gpV" secondAttribute="top" constant="1" id="e9C-vf-AmM"/>
+                                    <constraint firstItem="Wq5-Va-wQN" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.2" id="eHx-NG-qgk"/>
+                                    <constraint firstItem="pQW-uw-vbq" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.2" id="eSg-ZE-BvK"/>
+                                    <constraint firstItem="bFZ-29-D0z" firstAttribute="leading" secondItem="vAy-9Y-wfZ" secondAttribute="trailing" constant="1" id="eUB-5d-8vb"/>
+                                    <constraint firstItem="mlO-PH-CvU" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.18" id="emd-rs-cbR"/>
+                                    <constraint firstItem="fkb-RW-IRI" firstAttribute="top" secondItem="g4x-Fq-gpV" secondAttribute="top" constant="1" id="fRj-dQ-mZT"/>
+                                    <constraint firstItem="Re6-rg-VRR" firstAttribute="top" secondItem="bFZ-29-D0z" secondAttribute="bottom" constant="1" id="geK-3x-nZ4"/>
+                                    <constraint firstItem="Ech-Wh-l0T" firstAttribute="leading" secondItem="dRa-hi-1NN" secondAttribute="trailing" constant="1" id="gft-vZ-CDt"/>
+                                    <constraint firstItem="pQW-uw-vbq" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.1" id="gp2-Yc-Xbg"/>
+                                    <constraint firstItem="qb4-PJ-NTM" firstAttribute="top" secondItem="Oti-Rl-OOq" secondAttribute="bottom" constant="1" id="gqR-Ag-kvj"/>
+                                    <constraint firstItem="fkb-RW-IRI" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.1" id="gql-Li-WCF"/>
+                                    <constraint firstItem="728-El-e3F" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.2" id="hBN-S8-TV2"/>
+                                    <constraint firstItem="YpT-Lj-ZJw" firstAttribute="top" secondItem="yCa-nZ-CQT" secondAttribute="bottom" constant="1" id="hJ1-G5-JZ7"/>
+                                    <constraint firstItem="CWo-OA-GEZ" firstAttribute="leading" secondItem="ScD-gE-sv4" secondAttribute="trailing" constant="1" id="hVW-rO-PZw"/>
+                                    <constraint firstItem="3iu-7t-Rqs" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.2" id="hm3-sp-u3d"/>
+                                    <constraint firstItem="6oh-7X-4ci" firstAttribute="leading" secondItem="728-El-e3F" secondAttribute="trailing" constant="1" id="ikK-s0-dba"/>
+                                    <constraint firstItem="tea-oo-TGe" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.18" id="jBi-5f-gai"/>
+                                    <constraint firstItem="5YT-zf-PHz" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.0975" id="jE2-KM-hIS"/>
+                                    <constraint firstItem="j7T-A3-Bkc" firstAttribute="leading" secondItem="g4x-Fq-gpV" secondAttribute="leading" constant="1" id="jLI-TP-iHK"/>
+                                    <constraint firstItem="CsT-Kt-bBg" firstAttribute="leading" secondItem="Wq5-Va-wQN" secondAttribute="trailing" constant="1" id="jTK-xM-Ajz"/>
+                                    <constraint firstItem="kuj-wf-KjX" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.1" id="kRw-jq-KBQ"/>
+                                    <constraint firstItem="6oh-7X-4ci" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.2" id="kpR-Ii-jwf"/>
+                                    <constraint firstItem="Gca-Zs-dhN" firstAttribute="leading" secondItem="3iu-7t-Rqs" secondAttribute="trailing" constant="1" id="l13-SM-WPP"/>
+                                    <constraint firstItem="kuj-wf-KjX" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.2" id="mLJ-DV-XQj"/>
+                                    <constraint firstAttribute="trailing" secondItem="CWo-OA-GEZ" secondAttribute="trailing" constant="1" id="mx8-nn-iTw"/>
+                                    <constraint firstItem="9ut-cg-9Ok" firstAttribute="top" secondItem="g4x-Fq-gpV" secondAttribute="top" constant="1" id="n63-Fr-Yt3"/>
+                                    <constraint firstItem="aXt-wp-u7B" firstAttribute="top" secondItem="Gca-Zs-dhN" secondAttribute="bottom" constant="1" id="n7n-qH-zPP"/>
+                                    <constraint firstItem="h6t-Dp-Vwc" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.2" id="nEv-KL-4mh"/>
+                                    <constraint firstAttribute="trailing" secondItem="lHi-7p-GhX" secondAttribute="trailing" constant="1" id="nmw-iX-xkB"/>
+                                    <constraint firstItem="rwk-3a-vSV" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.0975" id="o0C-r9-8pD"/>
+                                    <constraint firstItem="Dxu-Mf-mj4" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.1" id="oeE-fK-TOL"/>
+                                    <constraint firstItem="myw-E5-xG9" firstAttribute="top" secondItem="j7T-A3-Bkc" secondAttribute="bottom" constant="1" id="orB-t1-CAq"/>
+                                    <constraint firstItem="3gf-2m-fRG" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.1" id="otk-Em-9fO"/>
+                                    <constraint firstItem="eor-OW-1uo" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.1" id="pFG-5s-JBZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="mlO-PH-CvU" secondAttribute="bottom" constant="1" id="pWl-UG-G0F"/>
+                                    <constraint firstAttribute="bottom" secondItem="3gf-2m-fRG" secondAttribute="bottom" constant="1" id="pvc-5J-VS8"/>
+                                    <constraint firstItem="Oti-Rl-OOq" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.2" id="qUg-7t-rMD"/>
+                                    <constraint firstItem="lHi-7p-GhX" firstAttribute="leading" secondItem="h6t-Dp-Vwc" secondAttribute="trailing" constant="1" id="qgW-DC-NPF"/>
+                                    <constraint firstItem="uRc-Ep-88e" firstAttribute="top" secondItem="kuj-wf-KjX" secondAttribute="bottom" constant="1" id="qm4-oO-D42"/>
+                                    <constraint firstItem="rmF-G1-Yiq" firstAttribute="leading" secondItem="YpT-Lj-ZJw" secondAttribute="trailing" constant="1" id="rGC-pX-t6z"/>
+                                    <constraint firstItem="kuj-wf-KjX" firstAttribute="leading" secondItem="Oti-Rl-OOq" secondAttribute="trailing" constant="1" id="rPX-n8-4AE"/>
+                                    <constraint firstItem="16m-GJ-zJL" firstAttribute="top" secondItem="6oh-7X-4ci" secondAttribute="bottom" constant="1" id="rjo-2T-2dx"/>
+                                    <constraint firstItem="Gca-Zs-dhN" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.0975" id="rmz-iz-ccY"/>
+                                    <constraint firstItem="9FW-qQ-z6D" firstAttribute="top" secondItem="MJn-Gf-UsZ" secondAttribute="bottom" constant="1" id="ro2-rE-sgs"/>
+                                    <constraint firstItem="rmF-G1-Yiq" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.2" id="rxb-S0-eF4"/>
+                                    <constraint firstItem="Wq5-Va-wQN" firstAttribute="top" secondItem="ZLa-cg-Msc" secondAttribute="bottom" constant="1" id="rxk-je-sLT"/>
+                                    <constraint firstItem="dDE-gk-bdO" firstAttribute="top" secondItem="Wq5-Va-wQN" secondAttribute="bottom" constant="1" id="rxt-7z-uny"/>
+                                    <constraint firstItem="1Ww-ai-4JF" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.18" id="sQD-iq-GS2"/>
+                                    <constraint firstItem="qb4-PJ-NTM" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.1" id="tpW-eL-pKM"/>
+                                    <constraint firstAttribute="trailing" secondItem="ctk-q8-7eG" secondAttribute="trailing" constant="1" id="trF-Vv-cw0"/>
+                                    <constraint firstItem="YBn-ti-2J9" firstAttribute="leading" secondItem="WWY-Qq-UCC" secondAttribute="trailing" constant="1" id="ugC-IS-s16"/>
+                                    <constraint firstItem="Re6-rg-VRR" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.2" id="umm-C8-DQt"/>
+                                    <constraint firstItem="16m-GJ-zJL" firstAttribute="leading" secondItem="7iy-WN-pWq" secondAttribute="trailing" constant="1" id="vAq-rD-S5F"/>
+                                    <constraint firstItem="RBl-SL-z95" firstAttribute="leading" secondItem="j7T-A3-Bkc" secondAttribute="trailing" constant="1" id="vND-dZ-iMl"/>
+                                    <constraint firstAttribute="trailing" secondItem="Re6-rg-VRR" secondAttribute="trailing" constant="1" id="vpr-Cr-U58"/>
+                                    <constraint firstItem="pzr-Ou-ENX" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.2" id="vxj-pG-FwM"/>
+                                    <constraint firstItem="MJn-Gf-UsZ" firstAttribute="leading" secondItem="myw-E5-xG9" secondAttribute="trailing" constant="1" id="w9a-si-bpe"/>
+                                    <constraint firstItem="bFZ-29-D0z" firstAttribute="top" secondItem="lHi-7p-GhX" secondAttribute="bottom" constant="1" id="w9t-Fn-hWm"/>
+                                    <constraint firstItem="mlO-PH-CvU" firstAttribute="leading" secondItem="rwk-3a-vSV" secondAttribute="trailing" constant="1" id="x3G-sa-BBT"/>
+                                    <constraint firstItem="j7T-A3-Bkc" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.1" id="xL8-2f-BY1"/>
+                                    <constraint firstItem="3iu-7t-Rqs" firstAttribute="top" secondItem="g4x-Fq-gpV" secondAttribute="top" constant="1" id="xdo-Ui-lcI"/>
+                                    <constraint firstAttribute="bottom" secondItem="rwk-3a-vSV" secondAttribute="bottom" constant="1" id="xg3-Z5-HAl"/>
+                                    <constraint firstItem="ctk-q8-7eG" firstAttribute="leading" secondItem="tea-oo-TGe" secondAttribute="trailing" constant="1" id="xy2-aW-eEd"/>
+                                    <constraint firstItem="Oti-Rl-OOq" firstAttribute="leading" secondItem="9ut-cg-9Ok" secondAttribute="trailing" constant="1" id="yWu-yP-2B7"/>
+                                    <constraint firstItem="eor-OW-1uo" firstAttribute="leading" secondItem="g4x-Fq-gpV" secondAttribute="leading" constant="1" id="yhL-QJ-9mQ"/>
+                                    <constraint firstItem="h6t-Dp-Vwc" firstAttribute="leading" secondItem="5YT-zf-PHz" secondAttribute="trailing" constant="1" id="ymS-nW-AIb"/>
+                                    <constraint firstItem="728-El-e3F" firstAttribute="top" secondItem="AMu-ac-1Mt" secondAttribute="bottom" constant="1" id="z4d-BV-v3x"/>
+                                    <constraint firstItem="aXt-wp-u7B" firstAttribute="leading" secondItem="ZLa-cg-Msc" secondAttribute="trailing" constant="1" id="z8e-xI-PYa"/>
+                                    <constraint firstItem="AMu-ac-1Mt" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.1" id="zEz-mv-j6h"/>
+                                    <constraint firstItem="Dxu-Mf-mj4" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.18" id="zIV-cE-jYP"/>
+                                    <constraint firstItem="3iu-7t-Rqs" firstAttribute="width" secondItem="g4x-Fq-gpV" secondAttribute="width" multiplier="0.0975" id="zcD-X0-mN6"/>
+                                    <constraint firstItem="dRa-hi-1NN" firstAttribute="height" secondItem="g4x-Fq-gpV" secondAttribute="height" multiplier="0.2" id="zjx-aq-p74"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SbR-uv-it7"/>
+                        <color key="backgroundColor" name="calculator background"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="g4x-Fq-gpV" secondAttribute="bottom" id="3wd-aN-3T9"/>
+                            <constraint firstItem="g4x-Fq-gpV" firstAttribute="leading" secondItem="Vrc-mP-wLM" secondAttribute="leading" id="8bi-lr-nKg"/>
+                            <constraint firstItem="oqG-fG-KU0" firstAttribute="height" secondItem="SbR-uv-it7" secondAttribute="height" multiplier="0.2" id="8pj-zo-emu"/>
+                            <constraint firstItem="NG6-gl-vk2" firstAttribute="leading" secondItem="Vrc-mP-wLM" secondAttribute="leading" id="Gcp-pm-Qb7"/>
+                            <constraint firstItem="oqG-fG-KU0" firstAttribute="leading" secondItem="Vrc-mP-wLM" secondAttribute="leading" id="P1K-5y-DVs"/>
+                            <constraint firstAttribute="bottom" secondItem="NG6-gl-vk2" secondAttribute="bottom" constant="5" id="TjH-Tt-H7v"/>
+                            <constraint firstAttribute="trailing" secondItem="NG6-gl-vk2" secondAttribute="trailing" id="Xcy-mQ-zDC"/>
+                            <constraint firstAttribute="trailing" secondItem="oqG-fG-KU0" secondAttribute="trailing" id="cAC-hJ-Zdn"/>
+                            <constraint firstItem="oqG-fG-KU0" firstAttribute="top" secondItem="Vrc-mP-wLM" secondAttribute="top" id="fnS-fb-PGT"/>
+                            <constraint firstItem="g4x-Fq-gpV" firstAttribute="height" secondItem="SbR-uv-it7" secondAttribute="height" multiplier="0.8" id="nmp-37-DZX"/>
+                            <constraint firstItem="NG6-gl-vk2" firstAttribute="height" secondItem="SbR-uv-it7" secondAttribute="height" multiplier="0.89" id="t6h-It-bCJ"/>
+                            <constraint firstAttribute="trailing" secondItem="g4x-Fq-gpV" secondAttribute="trailing" id="yah-5N-3L0"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="NG6-gl-vk2"/>
+                                <exclude reference="g4x-Fq-gpV"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="NG6-gl-vk2"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="g4x-Fq-gpV"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="operatorLabel" destination="CNL-td-aRr" id="hvt-9U-hWZ"/>
+                        <outlet property="previousLabel" destination="f1d-Qf-Jkn" id="b7c-uJ-42Q"/>
+                        <outlet property="resultLabel" destination="eCK-XA-oNQ" id="BVE-y5-fgM"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2aQ-hO-BiL" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="135.9375" y="73.913043478260875"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="calculator background">
+            <color red="0.19200000166893005" green="0.20000000298023224" blue="0.2199999988079071" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="calculator button">
+            <color red="0.24699999392032623" green="0.5690000057220459" blue="0.76899999380111694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="calculator button extra">
+            <color red="0.57300001382827759" green="0.83099997043609619" blue="0.98799997568130493" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="calculator button landscape">
+            <color red="0.40200001001358032" green="0.50300002098083496" blue="0.74900001287460327" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="calculator button operators">
+            <color red="0.94900000095367432" green="0.53299999237060547" blue="0.27500000596046448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="calculator text">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
