@@ -87,7 +87,7 @@ class ViewController: UIViewController {
         let previous = previousLabel.text!
         let current = resultLabel.text!
         
-        let operatorSymbol = operatorLabel.text!
+        let operatorSymbol = operatorLabel.text ?? "+"
         
         //checking whether the number ends with a dot or not in order to keep the string clean
         if resultLabel.text!.hasSuffix(".") {
